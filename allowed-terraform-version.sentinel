@@ -3,7 +3,3 @@ import "tfplan"
 main = rule {
   tfplan.terraform_version matches "^0\\.13\\.\\d+$" 
 }
-
-policy "less-than-100-month" {
-  enforcement_level = "soft-mandatory"
-}
